@@ -12,8 +12,8 @@ import {
   handleCreateInstance,
   handleUpdateInstance,
 } from '@components/admin/api-config/instance-save-handlers';
+import { ProviderManagementModal } from '@components/admin/api-config/provider-management';
 import { ProviderManagementButton } from '@components/admin/api-config/provider-management-button';
-import { ProviderManagementModal } from '@components/admin/api-config/provider-management-modal';
 import { TagsSelector } from '@components/admin/api-config/tags-selector';
 import { useApiConfigEvents } from '@components/admin/api-config/use-api-config-events';
 import { useTheme } from '@lib/hooks/use-theme';
@@ -456,7 +456,7 @@ const InstanceForm = ({
 
         // check if form config is complete
         if (!formData.config.api_url || !formData.apiKey) {
-          toast.warning('Please fill in API URL and API Key');
+          toast.warning(t('validation.fillApiCredentials'));
           return;
         }
 
@@ -1275,7 +1275,6 @@ export default function ApiConfigPage() {
     updateAppInstance: updateInstance,
   } = useApiConfigStore();
 
-  // translation function
   const tInstanceSaveHandlers = useTranslations(
     'pages.admin.apiConfig.instanceSaveHandlers'
   );
@@ -1316,7 +1315,7 @@ export default function ApiConfigPage() {
   const handleProviderChange = () => {
     // reload providers data
     window.dispatchEvent(new CustomEvent('reloadProviders'));
-    toast.success('Provider configuration updated');
+    // Note: Toast will be shown by the specific operation (create/update/delete) in the modal
   };
 
   useEffect(() => {

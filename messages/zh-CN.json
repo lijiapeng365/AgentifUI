@@ -7,6 +7,11 @@
       "retry": "重试",
       "remove": "移除",
       "error": "错误",
+      "download": "下载",
+      "copy": "复制",
+      "copied": "已复制！",
+      "open": "打开",
+      "dismiss": "关闭",
       "customSelect": {
         "placeholder": "请选择..."
       },
@@ -1058,7 +1063,8 @@
             "buttons": {
               "cancel": "取消",
               "save": "保存",
-              "saving": "保存中..."
+              "saving": "保存中...",
+              "delete": "删除"
             }
           }
         },
@@ -1307,8 +1313,7 @@
             "current": "当前应用的服务提供商（不可修改）",
             "select": "选择服务提供商",
             "unknown": "未知提供商",
-            "selectPlaceholder": "请选择提供商",
-            "configUpdated": "提供商配置已更新"
+            "selectPlaceholder": "请选择提供商"
           },
           "fields": {
             "instanceId": {
@@ -1522,7 +1527,8 @@
           "phoneIcon": "📱",
           "moreGroups": "+{count} 个群组",
           "notInGroup": "未加入群组",
-          "moreGroupsTooltip": "还有 {count} 个群组：{names}"
+          "moreGroupsTooltip": "还有 {count} 个群组：{names}",
+          "confirm": "确认"
         },
         "pagination": {
           "showing": "显示第 {start} - {end} 条， 共 {total} 条记录",
@@ -1551,7 +1557,11 @@
             "active": "活跃",
             "suspended": "已暂停",
             "pending": "待激活"
-          }
+          },
+          "roleChangeConfirm": "将{name}的角色更改为{role} ？",
+          "statusChangeConfirm": "将{name}的状态更改为{status} ？",
+          "batchRoleChangeConfirm": "将{count}个用户的角色更改为{role} ？",
+          "batchStatusChangeConfirm": "将{count}个用户的状态更改为{status} ？"
         }
       },
       "ssoProviders": {
@@ -2422,6 +2432,68 @@
         "conditionalBranching": "条件分支",
         "conversationManagement": "对话管理"
       }
+    }
+  },
+  "filePreview": {
+    "loading": "正在加载文件内容...",
+    "failed": "文件加载失败",
+    "retryButton": "重试",
+    "dismissButton": "关闭",
+    "downloadButton": "下载文件",
+    "closeButton": "关闭预览",
+    "noFileSelected": "未选择文件",
+    "previewNotSupported": "不支持预览此文件类型。您可以下载查看内容。",
+    "textPreview": {
+      "title": "文本预览",
+      "copyButton": "复制",
+      "copiedButton": "已复制！",
+      "downloadButton": "下载",
+      "charactersCount": "{count} 个字符"
+    },
+    "pdfPreview": {
+      "title": "PDF 预览",
+      "openButton": "打开",
+      "downloadButton": "下载",
+      "fileSize": "{size} MB"
+    },
+    "imagePreview": {
+      "title": "图片预览",
+      "downloadButton": "下载",
+      "loadError": "图片加载失败",
+      "downloadToView": "下载查看",
+      "filename": "文件名",
+      "fileSize": "文件大小",
+      "fileType": "文件类型"
+    },
+    "audio": {
+      "title": "音频预览",
+      "duration": "时长",
+      "loadError": "音频文件加载失败",
+      "notSupported": "您的浏览器不支持音频播放"
+    },
+    "video": {
+      "title": "视频预览",
+      "duration": "时长",
+      "resolution": "分辨率",
+      "loadError": "视频文件加载失败",
+      "notSupported": "您的浏览器不支持视频播放"
+    },
+    "markdownPreview": {
+      "title": "Markdown 预览",
+      "renderedMode": "渲染模式",
+      "rawMode": "原始模式",
+      "downloadButton": "下载",
+      "charactersCount": "{count} 个字符"
+    },
+    "errors": {
+      "noAppId": "文件预览缺少应用程序 ID",
+      "downloadNoAppId": "文件下载缺少应用程序 ID"
+    },
+    "fileInfo": {
+      "title": "文件信息",
+      "name": "名称：",
+      "type": "类型：",
+      "size": "大小："
     }
   }
 }

@@ -23,7 +23,12 @@
       },
       "moreButton": {
         "ariaLabel": "Más opciones"
-      }
+      },
+      "download": "Descargar",
+      "copy": "Copiar",
+      "copied": "¡Copiado!",
+      "open": "Abrir",
+      "dismiss": "Cerrar"
     },
     "time": {
       "notRecorded": "No registrado",
@@ -1058,7 +1063,8 @@
             "buttons": {
               "cancel": "Cancelar",
               "save": "Guardar",
-              "saving": "Guardando..."
+              "saving": "Guardando...",
+              "delete": "Eliminar"
             }
           }
         },
@@ -1307,8 +1313,7 @@
             "current": "Proveedor de servicios de aplicación actual (no se puede modificar)",
             "select": "Seleccionar proveedor de servicios",
             "unknown": "Proveedor Desconocido",
-            "selectPlaceholder": "Por favor seleccione proveedor",
-            "configUpdated": "Configuración del proveedor actualizada"
+            "selectPlaceholder": "Por favor seleccione proveedor"
           },
           "fields": {
             "instanceId": {
@@ -1522,7 +1527,8 @@
           "phoneIcon": "📱",
           "moreGroups": "+{count} grupos",
           "notInGroup": "Sin grupo",
-          "moreGroupsTooltip": "{count} grupos más: {names}"
+          "moreGroupsTooltip": "{count} grupos más: {names}",
+          "confirm": "Confirmar"
         },
         "pagination": {
           "showing": "Mostrando {start} - {end} de {total} registros",
@@ -1551,7 +1557,11 @@
             "active": "Activo",
             "suspended": "Suspendido",
             "pending": "Pendiente"
-          }
+          },
+          "roleChangeConfirm": "¿Cambiar el rol de {name} a {role}?",
+          "statusChangeConfirm": "¿Cambiar el estado de {name} a {status}?",
+          "batchRoleChangeConfirm": "¿Cambiar los roles de {count} usuarios a {role}?",
+          "batchStatusChangeConfirm": "¿Cambiar el estado de {count} usuarios a {status}?"
         }
       },
       "ssoProviders": {
@@ -2423,5 +2433,67 @@
         "conversationManagement": "Gestión de Conversaciones"
       }
     }
+  },
+  "filePreview": {
+    "loading": "Cargando contenido del archivo...",
+    "failed": "Error al cargar el archivo",
+    "retryButton": "Reintentar",
+    "dismissButton": "Cerrar",
+    "downloadButton": "Descargar archivo",
+    "noFileSelected": "No se seleccionó ningún archivo",
+    "previewNotSupported": "No se admite la vista previa de este tipo de archivo. Puedes descargarlo para ver el contenido.",
+    "textPreview": {
+      "title": "Vista previa de texto",
+      "copyButton": "Copiar",
+      "copiedButton": "¡Copiado!",
+      "downloadButton": "Descargar",
+      "charactersCount": "{count} caracteres"
+    },
+    "pdfPreview": {
+      "title": "Vista previa de PDF",
+      "openButton": "Abrir",
+      "downloadButton": "Descargar",
+      "fileSize": "{size} MB"
+    },
+    "imagePreview": {
+      "title": "Vista previa de imagen",
+      "downloadButton": "Descargar",
+      "loadError": "Error al cargar la imagen",
+      "downloadToView": "Descargar para ver",
+      "filename": "Nombre del archivo",
+      "fileSize": "Tamaño del archivo",
+      "fileType": "Tipo de archivo"
+    },
+    "audio": {
+      "title": "Vista previa de audio",
+      "duration": "Duración",
+      "loadError": "Error al cargar el archivo de audio",
+      "notSupported": "Su navegador no admite la reproducción de audio"
+    },
+    "video": {
+      "title": "Vista previa de video",
+      "duration": "Duración",
+      "resolution": "Resolución",
+      "loadError": "Error al cargar el archivo de video",
+      "notSupported": "Su navegador no admite la reproducción de video"
+    },
+    "markdownPreview": {
+      "title": "Vista previa de Markdown",
+      "renderedMode": "Renderizado",
+      "rawMode": "Sin formato",
+      "downloadButton": "Descargar",
+      "charactersCount": "{count} caracteres"
+    },
+    "errors": {
+      "noAppId": "ID de aplicación no disponible para vista previa del archivo",
+      "downloadNoAppId": "ID de aplicación no disponible para descarga del archivo"
+    },
+    "fileInfo": {
+      "title": "Información del archivo",
+      "name": "Nombre:",
+      "type": "Tipo:",
+      "size": "Tamaño:"
+    },
+    "closeButton": "Cerrar vista previa"
   }
 }

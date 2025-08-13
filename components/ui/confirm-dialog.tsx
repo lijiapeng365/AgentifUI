@@ -66,11 +66,14 @@ export function ConfirmDialog({
     return () => document.removeEventListener('keydown', handleEsc);
   }, [isOpen, onClose, isLoading]);
 
-  // Handle click outside to close
+  // Handle click outside to close and prevent event bubbling
   useEffect(() => {
     if (!isOpen) return;
 
     const handleClickOutside = (e: MouseEvent) => {
+      // Stop all mouse events from propagating to prevent interaction with background modal
+      e.stopPropagation();
+
       if (
         dialogRef.current &&
         !dialogRef.current.contains(e.target as Node) &&
@@ -80,14 +83,32 @@ export function ConfirmDialog({
       }
     };
 
+    // Prevent all interactions with background elements
+    const preventBackgroundInteraction = (e: MouseEvent | TouchEvent) => {
+      e.stopPropagation();
+      e.preventDefault();
+    };
+
     // Add delay to avoid closing immediately when opened
     const timer = setTimeout(() => {
       document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('click', preventBackgroundInteraction, true);
+      document.addEventListener(
+        'touchstart',
+        preventBackgroundInteraction,
+        true
+      );
     }, 100);
 
     return () => {
       clearTimeout(timer);
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('click', preventBackgroundInteraction, true);
+      document.removeEventListener(
+        'touchstart',
+        preventBackgroundInteraction,
+        true
+      );
     };
   }, [isOpen, onClose, isLoading]);
 
@@ -143,8 +164,8 @@ export function ConfirmDialog({
   };
 
   // Get icon component
-  const getIcon = () => {
-    const iconClass = 'w-6 h-6';
+  const getIcon = (size: 'sm' | 'lg' = 'sm') => {
+    const iconClass = size === 'lg' ? 'w-8 h-8' : 'w-5 h-5';
 
     switch (icon) {
       case 'edit':
@@ -179,7 +200,7 @@ export function ConfirmDialog({
   const desktopDialog = (
     <div
       className={cn(
-        'fixed inset-0 z-[100] flex items-center justify-center p-4',
+        'fixed inset-0 z-[9999] flex items-center justify-center p-4',
         'bg-black/60 backdrop-blur-md',
         isOpen ? 'opacity-100' : 'pointer-events-none opacity-0',
         'transition-all duration-300 ease-out'
@@ -210,7 +231,7 @@ export function ConfirmDialog({
                 isDark ? 'ring-stone-600/50' : 'ring-stone-200/60'
               )}
             >
-              <div className="h-5 w-5">{getIcon()}</div>
+              {getIcon('sm')}
             </div>
 
             <div className="min-w-0 flex-1">
@@ -297,7 +318,7 @@ export function ConfirmDialog({
   const mobileDialog = (
     <div
       className={cn(
-        'fixed inset-0 z-[100] flex items-end justify-center',
+        'fixed inset-0 z-[9999] flex items-end justify-center',
         'bg-black/50 backdrop-blur-md',
         isOpen ? 'opacity-100' : 'pointer-events-none opacity-0',
         'transition-opacity duration-300 ease-out'
@@ -338,7 +359,7 @@ export function ConfirmDialog({
               isDark ? 'ring-stone-700/50' : 'ring-stone-200/50'
             )}
           >
-            <div className="h-8 w-8">{getIcon()}</div>
+            {getIcon('lg')}
           </div>
 
           <h3

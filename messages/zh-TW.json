@@ -23,7 +23,12 @@
       },
       "moreButton": {
         "ariaLabel": "更多選項"
-      }
+      },
+      "download": "下載",
+      "copy": "複製",
+      "copied": "已複製！",
+      "open": "開啟",
+      "dismiss": "關閉"
     },
     "time": {
       "notRecorded": "未記錄",
@@ -1058,7 +1063,8 @@
             "buttons": {
               "cancel": "取消",
               "save": "儲存",
-              "saving": "儲存中..."
+              "saving": "儲存中...",
+              "delete": "刪除"
             }
           }
         },
@@ -1307,8 +1313,7 @@
             "current": "目前應用的服務提供商（不可修改）",
             "select": "選擇服務提供商",
             "unknown": "未知提供商",
-            "selectPlaceholder": "請選擇提供商",
-            "configUpdated": "提供商配置已更新"
+            "selectPlaceholder": "請選擇提供商"
           },
           "fields": {
             "instanceId": {
@@ -1522,7 +1527,8 @@
           "phoneIcon": "📱",
           "moreGroups": "+{count} 個群組",
           "notInGroup": "未加入群組",
-          "moreGroupsTooltip": "還有 {count} 個群組：{names}"
+          "moreGroupsTooltip": "還有 {count} 個群組：{names}",
+          "confirm": "確認"
         },
         "pagination": {
           "showing": "顯示第 {start} - {end} 筆，共 {total} 筆記錄",
@@ -1551,7 +1557,11 @@
             "active": "活躍",
             "suspended": "已暫停",
             "pending": "待啟用"
-          }
+          },
+          "roleChangeConfirm": "要將{name}的角色變更為{role}嗎？",
+          "statusChangeConfirm": "要將{name}的狀態變更為{status}嗎？",
+          "batchRoleChangeConfirm": "將{count}個用戶的角色更改為{role} ？",
+          "batchStatusChangeConfirm": "要將{count}位使用者的狀態變更為{status}嗎？"
         }
       },
       "ssoProviders": {
@@ -2423,5 +2433,67 @@
         "conversationManagement": "對話管理"
       }
     }
+  },
+  "filePreview": {
+    "loading": "正在載入檔案內容...",
+    "failed": "檔案載入失敗",
+    "retryButton": "重試",
+    "dismissButton": "關閉",
+    "downloadButton": "下載檔案",
+    "noFileSelected": "未選擇檔案",
+    "previewNotSupported": "不支援預覽此檔案類型。您可以下載查看內容。",
+    "textPreview": {
+      "title": "文字預覽",
+      "copyButton": "複製",
+      "copiedButton": "已複製！",
+      "downloadButton": "下載",
+      "charactersCount": "{count} 個字符"
+    },
+    "pdfPreview": {
+      "title": "PDF 預覽",
+      "openButton": "開啟",
+      "downloadButton": "下載",
+      "fileSize": "{size} MB"
+    },
+    "imagePreview": {
+      "title": "圖片預覽",
+      "downloadButton": "下載",
+      "loadError": "圖片載入失敗",
+      "downloadToView": "下載檢視",
+      "filename": "檔案名稱",
+      "fileSize": "檔案大小",
+      "fileType": "檔案類型"
+    },
+    "audio": {
+      "title": "音頻預覽",
+      "duration": "時長",
+      "loadError": "音頻檔案載入失敗",
+      "notSupported": "您的瀏覽器不支援音頻播放"
+    },
+    "video": {
+      "title": "影片預覽",
+      "duration": "時長",
+      "resolution": "解析度",
+      "loadError": "影片檔案載入失敗",
+      "notSupported": "您的瀏覽器不支援影片播放"
+    },
+    "markdownPreview": {
+      "title": "Markdown 預覽",
+      "renderedMode": "渲染模式",
+      "rawMode": "原始模式",
+      "downloadButton": "下載",
+      "charactersCount": "{count} 個字符"
+    },
+    "errors": {
+      "noAppId": "檔案預覽缺少應用程式 ID",
+      "downloadNoAppId": "檔案下載缺少應用程式 ID"
+    },
+    "fileInfo": {
+      "title": "檔案資訊",
+      "name": "名稱：",
+      "type": "類型：",
+      "size": "大小："
+    },
+    "closeButton": "關閉預覽"
   }
 }

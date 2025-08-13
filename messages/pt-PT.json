@@ -23,7 +23,12 @@
       },
       "moreButton": {
         "ariaLabel": "Mais opções"
-      }
+      },
+      "download": "Transferir",
+      "copy": "Copiar",
+      "copied": "Copiado!",
+      "open": "Abrir",
+      "dismiss": "Fechar"
     },
     "time": {
       "notRecorded": "Não registado",
@@ -1058,7 +1063,8 @@
             "buttons": {
               "cancel": "Cancelar",
               "save": "Guardar",
-              "saving": "A guardar..."
+              "saving": "A guardar...",
+              "delete": "Excluir"
             }
           }
         },
@@ -1307,8 +1313,7 @@
             "current": "Fornecedor de serviço da aplicação atual (não pode ser modificado)",
             "select": "Selecione o fornecedor de serviço",
             "unknown": "Fornecedor Desconhecido",
-            "selectPlaceholder": "Por favor, selecione o fornecedor",
-            "configUpdated": "Configuração do fornecedor atualizada"
+            "selectPlaceholder": "Por favor, selecione o fornecedor"
           },
           "fields": {
             "instanceId": {
@@ -1522,7 +1527,8 @@
           "phoneIcon": "📱",
           "moreGroups": "+{count} grupos",
           "notInGroup": "Não está em nenhum grupo",
-          "moreGroupsTooltip": "{count} mais grupos: {names}"
+          "moreGroupsTooltip": "{count} mais grupos: {names}",
+          "confirm": "Confirmar"
         },
         "pagination": {
           "showing": "A mostrar {start} - {end} de {total} registos",
@@ -1551,7 +1557,11 @@
             "active": "Ativo",
             "suspended": "Suspenso",
             "pending": "Pendente"
-          }
+          },
+          "roleChangeConfirm": "Alterar a função de {name} para {role}?",
+          "statusChangeConfirm": "Alterar o estado de {name} para {status}?",
+          "batchRoleChangeConfirm": "Alterar as funções de {count} utilizadores para {role}?",
+          "batchStatusChangeConfirm": "Alterar o estado de {count} utilizadores para {status}?"
         }
       },
       "ssoProviders": {
@@ -2423,5 +2433,67 @@
         "conversationManagement": "Gestão de Conversa"
       }
     }
+  },
+  "filePreview": {
+    "loading": "A carregar conteúdo do ficheiro...",
+    "failed": "Falha ao carregar ficheiro",
+    "retryButton": "Tentar novamente",
+    "dismissButton": "Fechar",
+    "downloadButton": "Transferir ficheiro",
+    "noFileSelected": "Nenhum ficheiro selecionado",
+    "previewNotSupported": "Pré-visualização não suportada para este tipo de ficheiro. Pode transferir para ver o conteúdo.",
+    "textPreview": {
+      "title": "Pré-visualização de texto",
+      "copyButton": "Copiar",
+      "copiedButton": "Copiado!",
+      "downloadButton": "Transferir",
+      "charactersCount": "{count} caracteres"
+    },
+    "pdfPreview": {
+      "title": "Pré-visualização de PDF",
+      "openButton": "Abrir",
+      "downloadButton": "Transferir",
+      "fileSize": "{size} MB"
+    },
+    "imagePreview": {
+      "title": "Pré-visualização de imagem",
+      "downloadButton": "Transferir",
+      "loadError": "Falha ao carregar imagem",
+      "downloadToView": "Transferir para ver",
+      "filename": "Nome do ficheiro",
+      "fileSize": "Tamanho do ficheiro",
+      "fileType": "Tipo de ficheiro"
+    },
+    "audio": {
+      "title": "Pré-visualização de áudio",
+      "duration": "Duração",
+      "loadError": "Falha ao carregar ficheiro de áudio",
+      "notSupported": "O seu navegador não suporta reprodução de áudio"
+    },
+    "video": {
+      "title": "Pré-visualização de vídeo",
+      "duration": "Duração",
+      "resolution": "Resolução",
+      "loadError": "Falha ao carregar ficheiro de vídeo",
+      "notSupported": "O seu navegador não suporta reprodução de vídeo"
+    },
+    "markdownPreview": {
+      "title": "Pré-visualização de Markdown",
+      "renderedMode": "Renderizado",
+      "rawMode": "Bruto",
+      "downloadButton": "Transferir",
+      "charactersCount": "{count} caracteres"
+    },
+    "errors": {
+      "noAppId": "ID da aplicação não disponível para pré-visualização do ficheiro",
+      "downloadNoAppId": "ID da aplicação não disponível para transferência do ficheiro"
+    },
+    "fileInfo": {
+      "title": "Informação do ficheiro",
+      "name": "Nome:",
+      "type": "Tipo:",
+      "size": "Tamanho:"
+    },
+    "closeButton": "Fechar pré-visualização"
   }
 }

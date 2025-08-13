@@ -39,16 +39,17 @@ next-env.d.ts
 
 # test files
 /files
-scripts/*
-!scripts/validate-i18n-consistency.py
-!scripts/i18n-refactor-helper.py
+
+# scripts - allow all development scripts
+# scripts/
 
 # venv
 .venv
 
 # env files
 .env.*
-!env.example
+.env
+!.env.example
 
 # docs
 docs/security

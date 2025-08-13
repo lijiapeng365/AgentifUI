@@ -23,7 +23,12 @@
       },
       "moreButton": {
         "ariaLabel": "Plus d'options"
-      }
+      },
+      "download": "Télécharger",
+      "copy": "Copier",
+      "copied": "Copié !",
+      "open": "Ouvrir",
+      "dismiss": "Fermer"
     },
     "time": {
       "notRecorded": "Non enregistré",
@@ -1058,7 +1063,8 @@
             "buttons": {
               "cancel": "Annuler",
               "save": "Enregistrer",
-              "saving": "Enregistrement..."
+              "saving": "Enregistrement...",
+              "delete": "Supprimer"
             }
           }
         },
@@ -1307,8 +1313,7 @@
             "current": "Fournisseur de services de l'application actuel (ne peut pas être modifié)",
             "select": "Sélectionner un fournisseur de services",
             "unknown": "Fournisseur inconnu",
-            "selectPlaceholder": "Veuillez sélectionner un fournisseur",
-            "configUpdated": "Configuration du fournisseur mise à jour"
+            "selectPlaceholder": "Veuillez sélectionner un fournisseur"
           },
           "fields": {
             "instanceId": {
@@ -1522,7 +1527,8 @@
           "phoneIcon": "📱",
           "moreGroups": "+{count} groupes",
           "notInGroup": "N'appartient à aucun groupe",
-          "moreGroupsTooltip": "{count} groupes de plus : {names}"
+          "moreGroupsTooltip": "{count} groupes de plus : {names}",
+          "confirm": "Confirmer"
         },
         "pagination": {
           "showing": "Affichage de {start} à {end} sur {total} enregistrements",
@@ -1551,7 +1557,11 @@
             "active": "Actif",
             "suspended": "Suspendu",
             "pending": "En attente"
-          }
+          },
+          "roleChangeConfirm": "Changer le rôle de {name} en {role} ?",
+          "statusChangeConfirm": "Changer le statut de {name} en {status} ?",
+          "batchRoleChangeConfirm": "Changer les rôles de {count} utilisateurs en {role} ?",
+          "batchStatusChangeConfirm": "Changer le statut de {count} utilisateurs en {status} ?"
         }
       },
       "ssoProviders": {
@@ -2423,5 +2433,67 @@
         "conversationManagement": "Gestion de la conversation"
       }
     }
+  },
+  "filePreview": {
+    "loading": "Chargement du contenu du fichier...",
+    "failed": "Échec du chargement du fichier",
+    "retryButton": "Réessayer",
+    "dismissButton": "Fermer",
+    "downloadButton": "Télécharger le fichier",
+    "noFileSelected": "Aucun fichier sélectionné",
+    "previewNotSupported": "Aperçu non pris en charge pour ce type de fichier. Vous pouvez le télécharger pour voir le contenu.",
+    "textPreview": {
+      "title": "Aperçu du texte",
+      "copyButton": "Copier",
+      "copiedButton": "Copié !",
+      "downloadButton": "Télécharger",
+      "charactersCount": "{count} caractères"
+    },
+    "pdfPreview": {
+      "title": "Aperçu PDF",
+      "openButton": "Ouvrir",
+      "downloadButton": "Télécharger",
+      "fileSize": "{size} Mo"
+    },
+    "imagePreview": {
+      "title": "Aperçu d'image",
+      "downloadButton": "Télécharger",
+      "loadError": "Échec du chargement de l'image",
+      "downloadToView": "Télécharger pour voir",
+      "filename": "Nom du fichier",
+      "fileSize": "Taille du fichier",
+      "fileType": "Type de fichier"
+    },
+    "audio": {
+      "title": "Aperçu audio",
+      "duration": "Durée",
+      "loadError": "Échec du chargement du fichier audio",
+      "notSupported": "Votre navigateur ne prend pas en charge la lecture audio"
+    },
+    "video": {
+      "title": "Aperçu vidéo",
+      "duration": "Durée",
+      "resolution": "Résolution",
+      "loadError": "Échec du chargement du fichier vidéo",
+      "notSupported": "Votre navigateur ne prend pas en charge la lecture vidéo"
+    },
+    "markdownPreview": {
+      "title": "Aperçu Markdown",
+      "renderedMode": "Rendu",
+      "rawMode": "Brut",
+      "downloadButton": "Télécharger",
+      "charactersCount": "{count} caractères"
+    },
+    "errors": {
+      "noAppId": "ID d'application non disponible pour l'aperçu du fichier",
+      "downloadNoAppId": "ID d'application non disponible pour le téléchargement du fichier"
+    },
+    "fileInfo": {
+      "title": "Informations du fichier",
+      "name": "Nom :",
+      "type": "Type :",
+      "size": "Taille :"
+    },
+    "closeButton": "Fermer l'aperçu"
   }
 }

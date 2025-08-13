@@ -7,6 +7,11 @@
       "retry": "Retry",
       "remove": "Remove",
       "error": "Error",
+      "download": "Download",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "open": "Open",
+      "dismiss": "Dismiss",
       "customSelect": {
         "placeholder": "Please select..."
       },
@@ -1056,6 +1061,7 @@
               "authMethod": "Authentication Method"
             },
             "buttons": {
+              "delete": "Delete",
               "cancel": "Cancel",
               "save": "Save",
               "saving": "Saving..."
@@ -1307,8 +1313,7 @@
             "current": "Current application service provider (cannot be modified)",
             "select": "Select service provider",
             "unknown": "Unknown Provider",
-            "selectPlaceholder": "Please select provider",
-            "configUpdated": "Provider configuration updated"
+            "selectPlaceholder": "Please select provider"
           },
           "fields": {
             "instanceId": {
@@ -1511,6 +1516,7 @@
           "changeRole": "Change Role",
           "changeStatus": "Change Status",
           "deleteUser": "Delete User",
+          "confirm": "Confirm",
           "current": "(Current)",
           "self": "(Self)",
           "admin": "(Admin)",
@@ -1540,6 +1546,10 @@
           "statusChangeSuccess": "Changed {name}'s status to {status}",
           "batchRoleChangeSuccess": "Batch changed {count} users' roles",
           "batchStatusChangeSuccess": "Batch changed {count} users' status",
+          "roleChangeConfirm": "Change {name}'s role to {role}?",
+          "statusChangeConfirm": "Change {name}'s status to {status}?",
+          "batchRoleChangeConfirm": "Change {count} users' roles to {role}?",
+          "batchStatusChangeConfirm": "Change {count} users' status to {status}?",
           "deleteConfirm": "Are you sure you want to delete user {name}? This action cannot be undone.",
           "deleteSuccess": "Deleted user {name}",
           "roles": {
@@ -2422,6 +2432,68 @@
         "conditionalBranching": "Conditional Branching",
         "conversationManagement": "Conversation Management"
       }
+    }
+  },
+  "filePreview": {
+    "loading": "Loading file content...",
+    "failed": "Failed to load file",
+    "retryButton": "Retry",
+    "dismissButton": "Dismiss",
+    "downloadButton": "Download File",
+    "closeButton": "Close preview",
+    "noFileSelected": "No file selected",
+    "previewNotSupported": "Preview not supported for this file type. You can download it to view the content.",
+    "textPreview": {
+      "title": "Text Preview",
+      "copyButton": "Copy",
+      "copiedButton": "Copied!",
+      "downloadButton": "Download",
+      "charactersCount": "{count} characters"
+    },
+    "pdfPreview": {
+      "title": "PDF Preview",
+      "openButton": "Open",
+      "downloadButton": "Download",
+      "fileSize": "{size} MB"
+    },
+    "imagePreview": {
+      "title": "Image Preview",
+      "downloadButton": "Download",
+      "loadError": "Failed to load image",
+      "downloadToView": "Download to view",
+      "filename": "Filename",
+      "fileSize": "File Size",
+      "fileType": "File Type"
+    },
+    "audio": {
+      "title": "Audio Preview",
+      "duration": "Duration",
+      "loadError": "Failed to load audio file",
+      "notSupported": "Your browser does not support audio playback"
+    },
+    "video": {
+      "title": "Video Preview",
+      "duration": "Duration",
+      "resolution": "Resolution",
+      "loadError": "Failed to load video file",
+      "notSupported": "Your browser does not support video playback"
+    },
+    "markdownPreview": {
+      "title": "Markdown Preview",
+      "renderedMode": "Rendered",
+      "rawMode": "Raw",
+      "downloadButton": "Download",
+      "charactersCount": "{count} characters"
+    },
+    "errors": {
+      "noAppId": "No application ID available for file preview",
+      "downloadNoAppId": "No application ID available for file download"
+    },
+    "fileInfo": {
+      "title": "File Information",
+      "name": "Name:",
+      "type": "Type:",
+      "size": "Size:"
     }
   }
 }
